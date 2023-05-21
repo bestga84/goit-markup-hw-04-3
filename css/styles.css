@@ -8,6 +8,7 @@
     --hero-footer-color: #2F303A;
     --comand-color: #F5F4FA;
     --border-portfolio: #EEEEEE;
+    --border-client: #AFB1B8;
 
     --primary-font: "Roboto", sans-serif;
     --second-font: "Raleway", sans-serif;
@@ -54,6 +55,16 @@ ol {
 .hero-padding {
     padding-top: 200px;
     padding-bottom: 200px;
+}
+
+.hero-color-bg {
+    max-width: 1600px;
+    max-height: 600px;
+    background-image: linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/hero/img.jpg);    
+    background-color: var(--hero-footer-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -137,13 +148,41 @@ ol {
     margin-right: 30px;
 }
 
+.icon-item {
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--comand-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.icon-details {
+    padding: 25px 102px;
+}
+
+.icon-clock {
+    padding: 25px 102px;
+}
+
+.icon-diagram {
+    padding: 33px 100px;
+}
+
+.icon-astronaut {
+    padding: 29px 100px;
+}
+
 
 .buzy-img,
 .person-img,
 .portfolio-img {
     display: block;
     padding-bottom: 0;
-    max-width: 368px;
+    max-width: 370px;
 }
 
 .photo {
@@ -259,6 +298,24 @@ ol {
 .paragraph-text {
     color: var(--paragraph-color-font);
 }
+
+.mail-tel-text {
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-icon::before {
+    display: inline-flex;
+    content: "";
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+.nav-icon:hover,
+.nav-icon:focus {
+    fill: var(--second-color-font);    
+}
+
 
 .mail-tel-text {
     display: block;
@@ -393,6 +450,82 @@ ol {
     margin-bottom: 50px;
 }
 
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+}
+
+
+
+
+
+.company-flex {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.icon-client-list {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--border-client);
+    border-radius: 4px;
+}
+
+.icon-client-list:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.icon-client {
+    display: block;
+}
+
+.icon-client-ya-co {
+    width: 41px;
+    height: 47px;
+    margin: 23px 65px 20px 64px;
+}
+
+.icon-client-tagline-here {
+    width: 40px;
+    height: 52px;
+    margin: 19px 65px 21px 65px;
+}
+
+.icon-client-company {
+    width: 44px;
+    height: 42px;
+    margin: 25px 65px 26px 66px;
+}
+
+.icon-client-foster-peters {
+    width: 84px;
+    height: 40px;
+    margin: 25px 43px 27px 43px;
+}
+
+.icon-client-brand {
+    width: 62px;
+    height: 45px;
+    margin: 23px 53px 24px 54px;
+}
+
+.icon-client-tag-line {
+    width: 94px;
+    height: 44px;
+    margin: 23px 38px 25px 38px;
+}
+
+.icon-client-list:hover,
+.icon-client-list:focus {
+    fill: var(--second-color-font);
+}
+
+
+
 .main-buzy {
     font-weight: 700;
     font-size: 14px;
@@ -469,6 +602,7 @@ ol {
     flex-basis: calc((100% - 30px*2) / 3);
     margin-top: 0px;
 }
+
 
 .container-portfolio > .portfolio-item:not(:nth-child(3n+1)) {
     margin-left: 30px;
