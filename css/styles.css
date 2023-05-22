@@ -463,66 +463,73 @@ ol {
 .company-flex {
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+
 }
 
-
-.icon-client-list {
-    width: 170px;
-    height: 92px;
+.company-flex > .icon-client-list {
+    flex-basis: calc((100% - 30px*5) / 6);
+    margin-top: 0px;
     border: 1px solid var(--border-client);
     border-radius: 4px;
+    height: 92px;
 }
 
-.icon-client-list:not(:last-child) {
+
+.icon-client-list:nth-child(n + 7) {
+    margin-top: 30px;
+}
+
+.icon-client-list:not(:nth-child(6n)) {
     margin-right: 30px;
 }
 
 
-.icon-client {
+/* .icon-client {
     display: block;
-}
+} */
 
 .icon-client-ya-co {
     width: 41px;
-    height: 47px;
-    margin: 23px 65px 20px 64px;
+    height: 47px;    
+    /* margin: 23px 63px 19px 63px; */
+    margin-top: 23px;
+    margin-left: 63px;
 }
 
 .icon-client-tagline-here {
     width: 40px;
     height: 52px;
-    margin: 19px 65px 21px 65px;
+    margin: 19px 63px 21px 63px;
 }
 
 .icon-client-company {
     width: 44px;
     height: 42px;
-    margin: 25px 65px 26px 66px;
+    margin: 25px 61px 26px 61px;
 }
 
 .icon-client-foster-peters {
     width: 84px;
     height: 40px;
-    margin: 25px 43px 27px 43px;
+    margin: 25px 41px 27px 41px;
 }
 
 .icon-client-brand {
     width: 62px;
     height: 45px;
-    margin: 23px 53px 24px 54px;
+    margin: 23px 52px 24px 52px;
 }
 
 .icon-client-tag-line {
     width: 94px;
     height: 44px;
-    margin: 23px 38px 25px 38px;
+    margin: 23px 36px 25px 36px;
 }
 
-.icon-client-list:hover,
+/* .icon-client-list:hover,
 .icon-client-list:focus {
     fill: var(--second-color-font);
-}
+} */
 
 
 
