@@ -450,20 +450,63 @@ ol {
     margin-bottom: 50px;
 }
 
+
+/* ===== Соц.мережі команди ===== Початок */
 .social-list {
     display: flex;
-    justify-content: space-between;
-    background-color: yellow;
+    justify-content: center;
+}
+
+.social-list > .social-list-icons {
+    margin-bottom: 30px;
+}
+
+.social-list > .social-list-icons:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icon-size {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.social-list-link {
+    color: var(--border-client);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    color: var(--hero-color-font);
+    background-color: var(--second-color-font);
+    cursor: pointer;
+}
+
+.social-icon-size {
+    width: 50px; 
+    height: 50px;
+    fill: currentColor;
 }
 
 
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--hero-color-font);
+    border-radius: 50%;
+}
+/* ===== Соц.мережі команди ===== Кінець */
 
 
 
+
+
+/* ===== Постійні клієнти ===== Початок */
 .company-flex {
     display:flex;
     flex-wrap: wrap;
-
 }
 
 .company-flex > .icon-client-list {
@@ -472,8 +515,9 @@ ol {
     border: 1px solid var(--border-client);
     border-radius: 4px;
     height: 92px;
+    /* color: var(--border-client); */
+    color:tomato;
 }
-
 
 .icon-client-list:nth-child(n + 7) {
     margin-top: 30px;
@@ -483,46 +527,66 @@ ol {
     margin-right: 30px;
 }
 
+.icon-client {
+    fill: var(--border-client);
+}
+.icon-client-list:hover,
+.icon-client-list:focus {
+    border: 1px solid var(--second-color-font);
+    cursor: pointer;
+}
+.icon-client-list:hover > .icon-client,
+.icon-client-list:focus > .icon-client {
+    fill: var(--second-color-font);
+}
+
+
+/* .social-list-link:hover,
+.social-list-link:focus {
+    color: var(--hero-color-font);
+    background-color: var(--second-color-font);
+    cursor: pointer;
+} */
+
 
 /* .icon-client {
     display: block;
 } */
 
 .icon-client-ya-co {
-    width: 41px;
-    height: 47px;    
-    /* margin: 23px 63px 19px 63px; */
+    max-width: 41px;
+    max-height: 47px;    
     margin-top: 23px;
     margin-left: 63px;
 }
 
 .icon-client-tagline-here {
-    width: 40px;
-    height: 52px;
+    max-width: 40px;
+    max-height: 52px;
     margin: 19px 63px 21px 63px;
 }
 
 .icon-client-company {
-    width: 44px;
-    height: 42px;
+    max-width: 44px;
+    max-height: 42px;
     margin: 25px 61px 26px 61px;
 }
 
 .icon-client-foster-peters {
-    width: 84px;
-    height: 40px;
+    max-width: 84px;
+    max-height: 40px;
     margin: 25px 41px 27px 41px;
 }
 
 .icon-client-brand {
-    width: 62px;
-    height: 45px;
+    max-width: 62px;
+    max-height: 45px;
     margin: 23px 52px 24px 52px;
 }
 
 .icon-client-tag-line {
-    width: 94px;
-    height: 44px;
+    max-width: 94px;
+    max-height: 44px;
     margin: 23px 36px 25px 36px;
 }
 
@@ -530,7 +594,7 @@ ol {
 .icon-client-list:focus {
     fill: var(--second-color-font);
 } */
-
+/* ===== Постійні клієнти ===== Кінець */
 
 
 .main-buzy {
