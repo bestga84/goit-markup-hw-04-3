@@ -300,22 +300,20 @@ ol {
     color: var(--paragraph-color-font);
 }
 
-.mail-tel-text {
-    display: inline-flex;
-    align-items: center;
+
+/* ==== Іконка в навігації ==== Початок */
+
+
+.list-item-nav::after {
+    display: flex;
+    content: "";
+    width: 16px;
+    height: 12px;
+    outline: 1px solid red;
 }
 
-.nav-icon::before {
-    display: inline-flex;
-    content: "";
-    margin-right: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    }
-.nav-icon:hover,
-.nav-icon:focus {
-    fill: var(--second-color-font);    
-}
+/* ==== Іконка в навігації ==== Кінець */
+
 
 
 .mail-tel-text {
