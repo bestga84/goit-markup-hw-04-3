@@ -514,69 +514,51 @@ ol {
     margin-right: 30px;
 }
 
-/* .icon-client {
-    fill: var(--border-client);
-}
-.icon-client-list:hover,
-.icon-client-list:focus {
-    border: 1px solid var(--second-color-font);
-    cursor: pointer;
-}
-.icon-client-list:hover > .icon-client,
-.icon-client-list:focus > .icon-client {
-    fill: var(--second-color-font);
-} */
 
 .client-hover-focus {
+    display: flex;
     fill: var(--border-client);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
-.icon-client-list:hover,
-.icon-client-list:focus {
+
+.client-hover-focus:hover,
+.client-hover-focus:focus {
     border: 1px solid var(--second-color-font);
     cursor: pointer;
 }
-.icon-client-list:hover  .icon-client,
-.icon-client-list:focus  .icon-client {
+.client-hover-focus:hover  .icon-client,
+.client-hover-focus:focus  .icon-client {
     fill: var(--second-color-font);
 }
 
-
 .icon-client-ya-co {
-    max-width: 41px;
-    max-height: 47px;    
-    margin-top: 23px;
-    margin-left: 63px;
+    width: 41px;
+    height: 47px;    
 }
-
 .icon-client-tagline-here {
-    max-width: 40px;
-    max-height: 52px;
-    margin: 19px 63px 21px 63px;
+    width: 40px;
+    height: 52px;
 }
-
 .icon-client-company {
-    max-width: 44px;
-    max-height: 42px;
-    margin: 25px 61px 26px 61px;
+    width: 44px;
+    height: 42px;
 }
-
 .icon-client-foster-peters {
-    max-width: 84px;
-    max-height: 40px;
-    margin: 25px 41px 27px 41px;
+    width: 84px;
+    height: 40px;
 }
-
 .icon-client-brand {
-    max-width: 62px;
-    max-height: 45px;
-    margin: 23px 52px 24px 52px;
+    width: 62px;
+    height: 45px;
+}
+.icon-client-tag-line {
+    width: 94px;
+    height: 44px;
 }
 
-.icon-client-tag-line {
-    max-width: 94px;
-    max-height: 44px;
-    margin: 23px 36px 25px 36px;
-}
 /* ===== Постійні клієнти ===== Кінець */
 
 
