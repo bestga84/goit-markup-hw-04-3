@@ -302,16 +302,11 @@ ol {
 
 
 /* ==== Іконка в навігації ==== Початок */
+.nav-icon {
+    fill: currentColor;
 
-
-.list-item-nav::after {
-    display: flex;
-    content: "";
-    width: 16px;
-    height: 12px;
-    outline: 1px solid red;
+    margin-right: 10px;
 }
-
 /* ==== Іконка в навігації ==== Кінець */
 
 
