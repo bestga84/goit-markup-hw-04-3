@@ -727,9 +727,9 @@ ol {
     align-items: baseline;
 }
 
-/* .footer-address-width {
+.footer-address-width {
     margin-right: 25px;
-} */
+}
 
 .footer-add {
     font-family: var(--primary-font);
